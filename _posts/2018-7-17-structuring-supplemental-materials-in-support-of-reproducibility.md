@@ -4,7 +4,9 @@ title: Structuring supplemental materials in support of reproducibility
 ---
 This paper offers a hirerchichal organization for supplemntal documents of biological papers.
 
-```
+```age is caused when researchers, fearful of burying
+relevant data in inaccessible supplements, increasingly
+cra
 @article{Greenbaum:2017,
   title={Structuring supplemental materials in support of reproducibility},
   author={Greenbaum, Dov and Rozowsky, Joel and Stodden, Victoria and Gerstein, Mark},
@@ -13,7 +15,6 @@ This paper offers a hirerchichal organization for supplemntal documents of biolo
   number={1},
   pages={64},
   year={2017},
-  publisher={BioMed Central}
-}```
+  publisher={BioMed Central}}
 
-
+```
