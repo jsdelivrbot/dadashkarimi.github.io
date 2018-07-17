@@ -4,11 +4,11 @@ title: Structuring supplemental materials in support of reproducibility
 bibliography: bibliography.bib
 ---
 
-Here is some text.[^fn] kdddd kdld
+Here is some text. {%  cite Greenbaum:2017 %} kdddd kdld
 
 {% bibliography %}
 
-`[^fn] @article{greenbaum2017structuring,
+`@article{Greenbaum:2017,
   title={Structuring supplemental materials in support of reproducibility},
   author={Greenbaum, Dov and Rozowsky, Joel and Stodden, Victoria and Gerstein, Mark},
   journal={Genome biology},
