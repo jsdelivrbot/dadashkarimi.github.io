@@ -13,7 +13,6 @@ title: Structuring supplemental materials in support of reproducibility
   pages={64},
   year={2017},
   publisher={BioMed Central}
-}
-'
+}`
 
 
