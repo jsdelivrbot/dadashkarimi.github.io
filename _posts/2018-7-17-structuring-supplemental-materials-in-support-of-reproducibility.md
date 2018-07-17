@@ -1,11 +1,12 @@
 ---
 layout: post
 title: Structuring supplemental materials in support of reproducibility
+bibliography: bibliography.bib
 ---
 
 Here is some text.[^fn] kdddd kdld
 
-
+{% bibliography %}
 
 `[^fn] @article{greenbaum2017structuring,
   title={Structuring supplemental materials in support of reproducibility},
