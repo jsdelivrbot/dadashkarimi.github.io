@@ -13,6 +13,7 @@ But where should I have started? I found Amin Karbasi's working on theory of opt
 
 I'm in New Haven. Currently I'm writing this post in Yale CEID. You can, work, invent, build, and do everything here. ![_config.yml]({{ site.baseurl }}/images/CEID.jpg)
 
+
 ### Contact me
 
 [javid.dadashkarimi@yale.edu](mailto:dadashkarimi@yale.edu)
