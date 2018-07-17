@@ -1,13 +1,12 @@
 ---
 layout: post
 title: Structuring supplemental materials in support of reproducibility
-bibliography: bibliography.bib
 ---
 Here is some text.[^fn]
 
 
 
-`@article{greenbaum2017structuring,
+`[^fn] @article{greenbaum2017structuring,
   title={Structuring supplemental materials in support of reproducibility},
   author={Greenbaum, Dov and Rozowsky, Joel and Stodden, Victoria and Gerstein, Mark},
   journal={Genome biology},
