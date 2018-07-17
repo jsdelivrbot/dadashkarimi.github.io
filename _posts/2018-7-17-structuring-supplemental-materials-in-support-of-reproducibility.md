@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Structuring supplemental materials in support of reproducibility [1]
+title: Structuring supplemental materials in support of reproducibility
 bibliography: bibliography.bib
 ---
 Here is some text.[^fn]
