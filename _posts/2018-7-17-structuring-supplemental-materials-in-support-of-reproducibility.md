@@ -2,7 +2,8 @@
 layout: post
 title: Structuring supplemental materials in support of reproducibility
 ---
-Here is some text.[^fn]
+
+Here is some text.[^fn] kdddd kdld
 
 
 
