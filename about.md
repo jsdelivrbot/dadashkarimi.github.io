@@ -12,6 +12,7 @@ But where should I have started? I found Amin Karbasi's working on theory of opt
 ### More Information
 
 I'm in New Haven. Currently I'm writing this post in Yale CEID. You can, work, invent, build, and do everything here. A guy asking me to sign a letter since they are filming right there. I don't know the name of the movie though. New haven is famous for pizza. I tried frank pepe which always is crowded. Last time it took 45 mins to get in.  
+
 ![_config.yml](/images/CEID.jpg)
 
 
