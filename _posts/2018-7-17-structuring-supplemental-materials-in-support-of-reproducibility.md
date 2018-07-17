@@ -2,7 +2,7 @@
 layout: post
 title: Structuring supplemental materials in support of reproducibility
 ---
-
+This paper offers a hirerchichal organization for supplemntal documents of biological papers.
 
 ```
 @article{Greenbaum:2017,
