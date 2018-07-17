@@ -5,7 +5,8 @@ bibliography: bibliography.bib
 ---
 Here is some text.[^fn]
 
-{% bibliography --cited --file bibliograpy.bib %}
+{% bibliography %}
+
 
 @article{greenbaum2017structuring,
   title={Structuring supplemental materials in support of reproducibility},
