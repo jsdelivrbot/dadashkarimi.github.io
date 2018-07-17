@@ -4,7 +4,8 @@ title: Structuring supplemental materials in support of reproducibility
 ---
 
 
-`@article{Greenbaum:2017,
+```
+@article{Greenbaum:2017,
   title={Structuring supplemental materials in support of reproducibility},
   author={Greenbaum, Dov and Rozowsky, Joel and Stodden, Victoria and Gerstein, Mark},
   journal={Genome biology},
@@ -13,6 +14,6 @@ title: Structuring supplemental materials in support of reproducibility
   pages={64},
   year={2017},
   publisher={BioMed Central}
-}`
+}```
 
 
