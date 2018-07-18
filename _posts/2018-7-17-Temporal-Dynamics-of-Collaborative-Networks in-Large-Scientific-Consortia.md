@@ -5,6 +5,7 @@ title: Temporal Dynamics of Collaborative Networks in Large Scientific Consortia
 
 This paper investigates at temporal changes in collaborative networks. 
 The goal of the paper is to study impact of scientific consortia in publishing papers and contributing in academia. 
+![_config.yml](/images/wang_16_1.png)
 
 ```
 @article{wang2016temporal,
