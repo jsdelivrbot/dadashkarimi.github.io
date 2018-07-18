@@ -9,7 +9,7 @@ Yay! Big data. The problem I was talkig about [here](/https://dadashkarimi.githu
 4. Reusable: I and machine can follow it and do research!
 
 ![_config.yml](/images/supplementary_1@3x.png)
-
+Fig. 1 Each section in supplementary document followed by <a href="https://www.codecogs.com/eqnedit.php?latex=\sum" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\sum" title="\sum" /></a>. If a section is not parallel with text, it is denoted by <a href="https://www.codecogs.com/eqnedit.php?latex=/" target="_blank"><img src="https://latex.codecogs.com/gif.latex?/" title="/" /></a> line. 
 
 ```
 @article{Greenbaum:2017,
