@@ -2,7 +2,7 @@
 layout: post
 title: Structuring supplemental materials in support of reproducibility
 ---
-Yay! Big data. The problem I was talkig about (here)[/https://dadashkarimi.github.io/about/]. Since is rapidly increasing. How we can succinctly represent the content of a research paper with supplementary documents. According to this proposal, supplements should have the following standards:
+Yay! Big data. The problem I was talkig about [here](/https://dadashkarimi.github.io/about/). Since is rapidly increasing. How we can succinctly represent the content of a research paper with supplementary documents. According to this proposal, supplements should have the following standards:
 1. Findable: both for human and machines (e.g., using identifiers)
 2. Accessible: available for long term (e.g., lincences)
 3. Interoperable: via shared vocabulary, references, ..
