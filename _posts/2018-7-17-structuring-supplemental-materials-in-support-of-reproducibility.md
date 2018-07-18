@@ -8,6 +8,7 @@ Yay! Big data. The problem I was talkig about (here)[/https://dadashkarimi.githu
 3. Interoperable: via shared vocabulary, references, ..
 4. Reusable: I and machine can follow it and do research!
 
+![_config.yml](/images/supplemental.pdf)
 
 
 ```
