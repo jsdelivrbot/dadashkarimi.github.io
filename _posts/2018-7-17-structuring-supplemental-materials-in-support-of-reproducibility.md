@@ -2,7 +2,13 @@
 layout: post
 title: Structuring supplemental materials in support of reproducibility
 ---
-This paper offers a hirerchichal organization for supplemntal documents of biological papers.
+Yay! Big data. The problem I was talkig about (here)[/https://dadashkarimi.github.io/about/]. Since is rapidly increasing. How we can succinctly represent the content of a research paper with supplementary documents. According to this proposal, supplements should have the following standards:
+1. Findable: both for human and machines (e.g., using identifiers)
+2. Accessible: available for long term (e.g., lincences)
+3. Interoperable: via shared vocabulary, references, ..
+4. Reusable: I and machine can follow it and do research!
+
+
 
 ```
 @article{Greenbaum:2017,
