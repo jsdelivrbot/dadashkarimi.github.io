@@ -9,6 +9,8 @@ Yay! Big data. The problem I was talkig about [here](/https://dadashkarimi.githu
 3. Interoperable: via shared vocabulary, references, ..
 4. Reusable: I and machine can follow it and do research!
 
+Fig. 1 shows a sample pair of paper and it's supplementary document. Each section in supplementary document has <a href="https://www.codecogs.com/eqnedit.php?latex=\sum" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\sum" title="\sum" /></a> prefix; it's possible to have more sections in supplemntary document that do not have any link to the original text. 
+
 ![_config.yml](/images/supplementary_1@3x.png)
 Fig. 1 Each section in supplementary document followed by <a href="https://www.codecogs.com/eqnedit.php?latex=\sum" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\sum" title="\sum" /></a>. If a section is not parallel with text, it is denoted by <a href="https://www.codecogs.com/eqnedit.php?latex=/" target="_blank"><img src="https://latex.codecogs.com/gif.latex?/" title="/" /></a> line. 
 
