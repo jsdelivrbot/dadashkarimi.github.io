@@ -4,7 +4,10 @@ title: Task-induced brain state manipulation improves prediction of individual t
 ---
 
 The idea is pretty cool. Imaging subjects while they are doing some cognitive tasks ends up with better prediction models. 
-These models are going to predict behavioral or cognitive states of the subjects. 
+These models are going to predict behavioral or cognitive states of the subjects.
+Based on this paper's terminology there are two types of data:
+1. rest data: data obtained while subjects are in rest state.
+2. task data: data obtained while subjects doing some tasks (i.e., gambling, language, motor, relational, social, working memory, and emotion).
 
 ```
 @article{Greene:2018,
