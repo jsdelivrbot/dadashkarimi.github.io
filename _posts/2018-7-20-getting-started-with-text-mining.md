@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting Started in Text Mining: Part Two
+title: Getting Started in Text Mining
 ---
 
 This paper is very cool. In this paper the authors shed light on joint areas between information retrieval, natural language processing, and computational biology.
