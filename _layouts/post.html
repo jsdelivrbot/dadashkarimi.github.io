@@ -22,7 +22,7 @@ layout: default
 
 <script>  
 	// 10 minutes from now
-	var time_in_minutes = 10;
+	var time_in_minutes = 7;
 	var current_time = Date.parse(new Date());
 	var deadline = new Date(current_time + time_in_minutes*60*1000);
 
@@ -39,12 +39,9 @@ layout: default
 	var timeinterval;
 	function run_clock(id,endtime){
 		var clock = document.getElementById(id);
-		if (clock){
-			alert('not null');
-		}
 		function update_clock(){
 			var t = time_remaining(endtime);
-			clock.innerHTML = 'minutes: '+t.minutes+'<br>seconds: '+t.seconds;
+			clock.innerHTML = ''+t.minutes+':'+t.seconds;
 			if(t.total<=0){ clearInterval(timeinterval); }
 	}
 	update_clock(); // run function once at first to avoid delay
