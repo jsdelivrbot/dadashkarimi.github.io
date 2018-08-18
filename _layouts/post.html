@@ -6,7 +6,8 @@ layout: default
   <h1>{{ page.title }}</h1>
   <div id="clockdiv"></div>
   <button id ="pause" class="btn info" >Pause</button>
-  <button id ="resume" class="btn danger">Resume</button>
+  <button id ="resume" class="btn warning">Resume</button>
+  <button id ="reset" class="btn danger">Reset</button>
 
   <div id="chronoExample">
      <div class="entry">
@@ -41,7 +42,7 @@ layout: default
 		var clock = document.getElementById(id);
 		function update_clock(){
 			var t = time_remaining(endtime);
-			clock.innerHTML = t.hourse+'h '+t.minutes+'m '+t.seconds+'s';
+			clock.innerHTML = t.hours+'h '+t.minutes+'m '+t.seconds+'s';
 			if(t.total<=0){ clearInterval(timeinterval); }
 	}
 	update_clock(); // run function once at first to avoid delay
@@ -60,7 +61,11 @@ layout: default
 			time_left = time_remaining(deadline).total; // preserve remaining time
 		}
 	}
-
+	
+	function reset_clock(){
+		location.reload(true);		
+	}
+	
 	function resume_clock(){
 		if(paused){
 			paused = false;
