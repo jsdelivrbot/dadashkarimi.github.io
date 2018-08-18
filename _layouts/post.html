@@ -3,7 +3,24 @@ layout: default
 ---
 <article class="post">  
   <!--script src="../lib/easytimer/dist/easytimer.min.js"></script-->
-  <script>  
+  <h1>{{ page.title }}</h1>
+  <div id="clockdiv"></div>
+  <button id ="pause" class="btn info" >Pause</button>
+  <button id ="resume" class="btn danger">Resume</button>
+
+  <div id="chronoExample">
+     <div class="entry">
+    {{ content }}
+  </div>
+
+  <div class="date">
+    Written on {{ page.date | date: "%B %e, %Y" }}
+  </div>
+
+  {% include disqus.html %}
+</article>
+
+<script>  
 	// 10 minutes from now
 	var time_in_minutes = 10;
 	var current_time = Date.parse(new Date());
@@ -62,21 +79,6 @@ layout: default
 	// handle pause and resume button clicks
 	document.getElementById('pause').onclick = pause_clock;
 	document.getElementById('resume').onclick = resume_clock;
-  </script>
+</script>
   
-  <h1>{{ page.title }}</h1>
-  <div id="clockdiv"></div>
-  <button id ="pause" class="btn info" >Pause</button>
-  <button id ="resume" class="btn danger">Resume</button>
 
-  <div id="chronoExample">
-     <div class="entry">
-    {{ content }}
-  </div>
-
-  <div class="date">
-    Written on {{ page.date | date: "%B %e, %Y" }}
-  </div>
-
-  {% include disqus.html %}
-</article>
