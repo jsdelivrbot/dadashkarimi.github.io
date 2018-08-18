@@ -22,6 +22,7 @@ layout: default
 
 	var timeinterval;
 	function run_clock(id,endtime){
+                alert(id);
 		var clock = document.getElementById(id);
 		function update_clock(){
 			var t = time_remaining(endtime);
@@ -63,17 +64,12 @@ layout: default
   </script>
   
   <h1>{{ page.title }}</h1>
+  <div id="clockdiv"></div>
+  <button id ="pause" class="btn info" >Pause</button>
+  <button id ="resume" class="btn danger">Resume</button>
+
   <div id="chronoExample">
-    <div id="clockdiv"></div>
-    <div class="values">00:00:00</div>
-    <div>
-        <!--button class="btn success">Start</button-->
-        <button id ="pause" class="btn info" >Pause</button>
-        <button id ="resume" class="btn danger">Resume</button>
-        <!--button class="btn warning">Reset</button-->
-    </div>
-   </div>
-  <div class="entry">
+     <div class="entry">
     {{ content }}
   </div>
 
