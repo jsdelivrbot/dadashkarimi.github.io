@@ -300,12 +300,12 @@ b.startButton{
  text-align:center;
  transition: all 0.2s;
 }
-a.button1:hover{
+b.startButton:hover{
  color:#000000;
  background-color:#FFFFFF;
 }
 @media all and (max-width:30em){
- a.button1{
+ b.startButton{
   display:block;
   margin:0.4em auto;
  }
