@@ -22,6 +22,9 @@ layout: default
 	var timeinterval;
 	function run_clock(id,endtime){
 		var clock = document.getElementById(id);
+		if (clock){
+			alert('not null');
+		}
 		function update_clock(){
 			var t = time_remaining(endtime);
 			clock.innerHTML = 'minutes: '+t.minutes+'<br>seconds: '+t.seconds;
