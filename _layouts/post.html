@@ -413,13 +413,6 @@ function Timer () {
     return total;
   }
 
-  /*
-   * PUBLIC functions
-   */
-
-  /**
-   * [stop stops the timer and resets the counters. Dispatch stopped event]
-   */
   function stop () {
     stopTimerAndResetCounters();
     dispatchEvent('stopped', eventData);
@@ -535,11 +528,6 @@ function Timer () {
   function getConfig () {
     return timerConfig;
   };
-
-  /**
-   * Public API
-   * Definition of Timer instance public functions
-   */
   if (typeof this !== 'undefined') {
     this.start = start;
 
@@ -565,20 +553,7 @@ function Timer () {
   }
 };
 
-//export default Timer;
-</script>
-
-
-
-	<script>
-    //	timer.start({countdown: true, startValues: {seconds: 30}});
-    //	$('#countdownExample .values').html(timer.getTimeValues().toString());
-    //	timer.addEventListener('secondsUpdated', function (e) {$('#countdownExample .values').html(timer.getTimeValues().toString());
-    //	});
-    //	timer.addEventListener('targetAchieved', function (e) {
-    //    $('#countdownExample .values').html('KABOOM!!');
-    //});
-    
+	//export default Timer;
     var timer = new Timer();
     $('#chronoExample .startButton').click(function () {
         timer.start();//{countdown: true, startValues: {seconds: 90}});
