@@ -282,11 +282,9 @@ footer {
   padding: 20px 0;
   text-align: center;
 }
-@import "highlights";
-@import "svg-icons";
 
 
-b.startButton{
+button.startButton{
  display:inline-block;
  padding:0.35em 1.2em;
  border:0.1em solid #FFFFFF;
@@ -300,13 +298,16 @@ b.startButton{
  text-align:center;
  transition: all 0.2s;
 }
-b.startButton:hover{
+button.startButton:hover{
  color:#000000;
  background-color:#FFFFFF;
 }
 @media all and (max-width:30em){
- b.startButton{
+ button.startButton{
   display:block;
   margin:0.4em auto;
  }
 } 
+
+@import "highlights";
+@import "svg-icons";
