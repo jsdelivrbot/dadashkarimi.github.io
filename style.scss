@@ -353,6 +353,7 @@ footer {
 
 /* The sticky class is added to the header with JS when it reaches its scroll position */
 .sticky {
+  padding: 10px 16px;
   position: fixed;
   top: 0;
   width:fit-content;
