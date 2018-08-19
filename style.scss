@@ -346,50 +346,22 @@ footer {
     background: #e7e7e7;
 }
 
-//.btn-success {
-//    color: #fff;
-//    background-color: #5cb85c;
-//    border-color: #4cae4c;
-//}
-//
-//.btn-primary {
-//	color: #fff;
-//	background-color: #337ab7;
-//	border-color: #2e6da4;
-//}
-//
-//.btn-danger {
-//    color: #fff;
-//    background-color: #d9534f;
-//    border-color: #d43f3a;
-//}
-//
-//.btn-warning {
-//    color: #fff;
-//    background-color: #f0ad4e;
-//    border-color: #eea236;
-//}
-//
-//.btn {
-//	display: inline-block;
-//	padding: 6px 12px;
-//	margin-bottom: 0;
-//	font-size: 14px;
-//	font-weight: 400;
-//	line-height: 1.42857143;
-//	text-align: center;
-//	white-space: nowrap;
-//	vertical-align: middle;
-//	-ms-touch-action: manipulation;
-//	touch-action: manipulation;
-//	cursor: pointer;
-//	-webkit-user-select: none;
-//	-moz-user-select: none;
-//	-ms-user-select: none;
-//	user-select: none;
-//	background-image: none;
-//	border: 1px solid transparent;
-//	border-radius: 4px;
-//}
+/* Page content */
+.content {
+  padding: 16px;
+}
+
+/* The sticky class is added to the header with JS when it reaches its scroll position */
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%
+}
+
+/* Add some top padding to the page content to prevent sudden quick movement (as the header gets a new position at the top of the page (position:fixed and top:0) */
+.sticky + .content {
+  padding-top: 102px;
+}
+
 @import "highlights";
 @import "svg-icons";
