@@ -23,7 +23,13 @@ We don't need to invoke very complicated ideas but we are about to assume the fo
 <p align="center"><img alt="\begin{equation*}&#10;w_{kk'} \sim N(0,\delta^2_w) &#10;\end{equation*}" src="https://rawgit.com/dadashkarimi/dadashkarimi.github.io/master/svgs/4a56963c4a4f9bfe3637530d80b56ac5.svg?sanitize=true" align="middle" width="114.4803pt" height="18.269295pt"/></p>
 <p align="center"><img alt="\begin{equation*}&#10;y_{ij} \sim \delta(Z_iWZ_j^T)&#10;\end{equation*}" src="https://rawgit.com/dadashkarimi/dadashkarimi.github.io/master/svgs/5568287b2ca605e21e193a3d04493aea.svg?sanitize=true" align="middle" width="119.228505pt" height="20.913915pt"/></p>
 
-
+explaining <img alt="$IBP(.)$" style="position:relative; top:7px;" src="https://rawgit.com/dadashkarimi/dadashkarimi.github.io/master/svgs/cf8b75d677c758fa8caf59ef55c91a57.svg?sanitize=true"/> or indian buffette process gives huge amount of insight into this problem.
+Let's assume the classes as a number of dishes and each customer is assumed to stop by a dish to fill her plate. 
+This distribution has a set of very nice properties in particular it captures countable infinite number of classes.
+We really don't want our prior somehow magically depends on the size of data.
+So the first customer stops by <img alt="$Poisson(\alpha)$" style="position:relative; top:7px;" src="https://rawgit.com/dadashkarimi/dadashkarimi.github.io/master/svgs/aca8c8df07e723a50f74fb84355dea28.svg?sanitize=true"/> number of dishes and the <img alt="$i-$" style="position:relative; top:2px;" src="https://rawgit.com/dadashkarimi/dadashkarimi.github.io/master/svgs/7b7ccf0dc7f33e23877ead84bb57af55.svg?sanitize=true"/>th one take a look at the previously chosen ones based on their popularity and then chooses a new one by <img alt="$Poisson(\alpha/i)$" style="position:relative; top:7px;" src="https://rawgit.com/dadashkarimi/dadashkarimi.github.io/master/svgs/65a0b92e014fbbb7c86696a380ce0b08.svg?sanitize=true"/>.
+We are going to take the limit of this as <img alt="$i$" style="position:relative; top:2px;" src="https://rawgit.com/dadashkarimi/dadashkarimi.github.io/master/svgs/77a3b857d53fb44e33b53e4c8b68351a.svg?sanitize=true"/> goes to <img alt="$\infinity$" style="position:relative; top:7px;" src="https://rawgit.com/dadashkarimi/dadashkarimi.github.io/master/svgs/e0c07b834cc98cd01db854cdce833d2d.svg?sanitize=true"/>.
+This is really cool and really strightforward. 
 
 It gives a huge amount of insight into
 this is certainly true in ..
