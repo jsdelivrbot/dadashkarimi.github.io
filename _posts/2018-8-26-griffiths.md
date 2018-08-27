@@ -5,9 +5,10 @@ title: Nonparametric Latent Feature Models for Link Prediction
 
 This paper is from the ML group in Berkeley.
 There is quite a lot of material in non-parametric bayesian;
-the reason that I'm going to spend a little bit of time on writing this is because of it's magic approach towards inferring the number of classes at the same time as associating the entities to each.
+the reason that I'm going to spend a little bit of time on writing this is because of it's magic approach towards inferring the number of classes at the same time as associating the entities to each class.
 I'll wrap up on details later but first I'm going to give enough background for you to follow what is going on in the paper.
-From a classical point of view a link prediction task is meant to be defined by a finite number of classes and a set of nodes.
+From a classical point of view a link prediction task is meant to be defined by a number of edges and a set of nodes.
+In ML community it's common to use latent class models to jointly learn how many latent classes are and which class is associated to which node.
 This apparently simple problem turns out to be very complicated if the number of classis is unknown before observing data. 
 Let's say <img alt="$s_1=$" style="position:relative; top:7px;" src="https://rawgit.com/dadashkarimi/dadashkarimi.github.io/master/svgs/e63d5448ef61e2fd17edd20e83eeed26.svg?sanitize=true"/>'male high school athletes' and <img alt="$s_2=$" style="position:relative; top:7px;" src="https://rawgit.com/dadashkarimi/dadashkarimi.github.io/master/svgs/caa80954b35018e0be0ea8d2119017fd.svg?sanitize=true"/>'male high school musician'. 
 You have to be able to assign a single class <img alt="$c=$" style="position:relative; top:7px;" src="https://rawgit.com/dadashkarimi/dadashkarimi.github.io/master/svgs/3318bc78ce112b6761f73b9288905746.svg?sanitize=true"/>'high school students' for these examples but through a flow of data you might find this reasonable to split it into two classes <img alt="$c_1=$" style="position:relative; top:7px;" src="https://rawgit.com/dadashkarimi/dadashkarimi.github.io/master/svgs/b5cbeca3815c7e70bd9ff3164e0e51ee.svg?sanitize=true"/>'athlete' and <img alt="$c_2=$" style="position:relative; top:7px;" src="https://rawgit.com/dadashkarimi/dadashkarimi.github.io/master/svgs/3367c6d79b877c913dccd683f3951fb9.svg?sanitize=true"/>'music'. 
