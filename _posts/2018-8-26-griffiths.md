@@ -19,7 +19,9 @@ Lets define <img alt="$Z=[z_{i,j}]\in {0,1}^{N\times K}$" style="position:relati
 
 If I unpack the definition of this function, the <img alt="$y_{i,j}$" style="position:relative; top:2px;" src="https://rawgit.com/dadashkarimi/dadashkarimi.github.io/master/svgs/782a78d8c11a2145d873d3bc48870864.svg?sanitize=true"/> is purely defined by features and the weights where <img alt="$\sigma = \frac{1}{1+\exp (-x)}$" style="position:relative; top:7px;" src="https://rawgit.com/dadashkarimi/dadashkarimi.github.io/master/svgs/9eaa22a843a8020f1a347b764412b390.svg?sanitize=true"/>.
 We don't need to invoke very complicated ideas but we are about to assume the following priors:
-<p align="center"><img alt="\begin{equation*}&#10;Z \sim IBP(\alpha) \\&#10;w_{kk'} \sim N(0,\delta^2_w) \\&#10;y_{ij} \sim \delta(Z_iWZ_j^T)&#10;\end{equation*}" src="https://rawgit.com/dadashkarimi/dadashkarimi.github.io/master/svgs/a284cd72d68a4a5d0beb5bc1ea3a8ee5.svg?sanitize=true" align="middle" width="325.74135pt" height="20.913915pt"/></p>
+<p align="center"><img alt="\begin{equation*}&#10;Z \sim IBP(\alpha) &#10;\end{equation*}" src="https://rawgit.com/dadashkarimi/dadashkarimi.github.io/master/svgs/18c63f10b9a4ddca28b1e6bc16712caf.svg?sanitize=true" align="middle" width="92.033205pt" height="16.376943pt"/></p>
+<p align="center"><img alt="\begin{equation*}&#10;w_{kk'} \sim N(0,\delta^2_w) &#10;\end{equation*}" src="https://rawgit.com/dadashkarimi/dadashkarimi.github.io/master/svgs/4a56963c4a4f9bfe3637530d80b56ac5.svg?sanitize=true" align="middle" width="114.4803pt" height="18.269295pt"/></p>
+<p align="center"><img alt="\begin{equation*}&#10;y_{ij} \sim \delta(Z_iWZ_j^T)&#10;\end{equation*}" src="https://rawgit.com/dadashkarimi/dadashkarimi.github.io/master/svgs/5568287b2ca605e21e193a3d04493aea.svg?sanitize=true" align="middle" width="119.228505pt" height="20.913915pt"/></p>
 
 
 
