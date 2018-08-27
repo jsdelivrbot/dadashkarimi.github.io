@@ -15,7 +15,7 @@ You have to be able to assign a single class <img alt="$c=$" style="position:rel
 Assume <img alt="$y_{ij}=1$" style="position:relative; top:7px;" src="https://rawgit.com/dadashkarimi/dadashkarimi.github.io/master/svgs/193959917d5e875406dd5eab26c8139e.svg?sanitize=true"/> if there is a link between entity <img alt="$i$" style="position:relative; top:2px;" src="https://rawgit.com/dadashkarimi/dadashkarimi.github.io/master/svgs/77a3b857d53fb44e33b53e4c8b68351a.svg?sanitize=true"/> and <img alt="$j$" style="position:relative; top:2px;" src="https://rawgit.com/dadashkarimi/dadashkarimi.github.io/master/svgs/36b5afebdba34564d884d347484ac0c7.svg?sanitize=true"/> and <img alt="$y_{i,j}=0$" style="position:relative; top:7px;" src="https://rawgit.com/dadashkarimi/dadashkarimi.github.io/master/svgs/67e3ad425f262d5d43ef11d4da43e404.svg?sanitize=true"/> if not. 
 Lets define <img alt="$Z=[z_{i,j}]\in {0,1}^{N\times K}$" style="position:relative; top:7px;" src="https://rawgit.com/dadashkarimi/dadashkarimi.github.io/master/svgs/4ee8061a5761da701621649613786b8a.svg?sanitize=true"/> the feature value matrix for all examples and <img alt="$W=[w_{i,j}] \in R^{K\times K}$" style="position:relative; top:7px;" src="https://rawgit.com/dadashkarimi/dadashkarimi.github.io/master/svgs/daa1032b51643b282c7bcad307157bbf.svg?sanitize=true"/> the weight matrix.
 
-<p align="center"><img alt="\begin{equation*}&#10;Pr(Y|Z,W) = \Pi_{i,j} \Bigg[ Pr(y_{ij}| Z_i, Z_j,W) = \sigma \big ( Z_i W Z_j^T\big) = \sigma \big( \sum_{k,k'} z_{ik}z_{jk'}w_{kk'}\big) \Bigg ]&#10;\end{equation*}" src="https://rawgit.com/dadashkarimi/dadashkarimi.github.io/master/svgs/03f12488dd55351438187941a5cd980d.svg?sanitize=true" align="middle" width="539.21505pt" height="50.765715pt"/></p>
+<p align="center"><img alt="\begin{equation*}&#10;P(Y|Z,W) = \Pi_{i,j} \Bigg[ P(y_{ij}| Z_i, Z_j,W) = \sigma \big ( Z_i W Z_j^T\big) = \sigma \big( \sum_{k,k'} z_{ik}z_{jk'}w_{kk'}\big) \Bigg ]&#10;\end{equation*}" src="https://rawgit.com/dadashkarimi/dadashkarimi.github.io/master/svgs/955edbc0b2eb83e8fc2d93a66ca13a71.svg?sanitize=true" align="middle" width="523.52355pt" height="50.765715pt"/></p>
 
 If I unpack the definition of this function, the <img alt="$y_{i,j}$" style="position:relative; top:2px;" src="https://rawgit.com/dadashkarimi/dadashkarimi.github.io/master/svgs/782a78d8c11a2145d873d3bc48870864.svg?sanitize=true"/> is purely defined by features and the weights where <img alt="$\sigma = \frac{1}{1+\exp (-x)}$" style="position:relative; top:7px;" src="https://rawgit.com/dadashkarimi/dadashkarimi.github.io/master/svgs/9eaa22a843a8020f1a347b764412b390.svg?sanitize=true"/>.
 We don't need to invoke very complicated ideas but we are about to assume the following priors:
@@ -31,24 +31,15 @@ So the first customer stops by <img alt="$Poisson(\alpha)$" style="position:rela
 We are going to take the limit of this as <img alt="$i$" style="position:relative; top:2px;" src="https://rawgit.com/dadashkarimi/dadashkarimi.github.io/master/svgs/77a3b857d53fb44e33b53e4c8b68351a.svg?sanitize=true"/> goes to <img alt="$\infinity$" style="position:relative; top:7px;" src="https://rawgit.com/dadashkarimi/dadashkarimi.github.io/master/svgs/e0c07b834cc98cd01db854cdce833d2d.svg?sanitize=true"/>.
 This is really cool and really strightforward. 
 
-It gives a huge amount of insight into
-this is certainly true in ..
-we are gonna take this simple idea and generalize it ..
-we realy don't want our prior somehowe magically depends on 
-it has some set of very nice properties
-we are going to take the limit of this as go goes to infin
-naturally it captures this fact that
-high weight between them
-should tend to have same labels
-if I unpack the definition of function 
-is purely defined in terms of 
-the weighted average of its neighbours 
-that's what this equation says
-this is really cool, really simple
-If I clam a few nodes, assuming that the graph is connected
-a and b have been widely studied in whole bunch of different fields
-I'll come to that point later
-it takes you 12 points to reach that level 
+We need to have data to be able to infere these parameters:
+<p align="center"><img alt="\begin{equation*}&#10; P(y_{ij}| Z,W,X,\beta) = \sigma \big ( Z_i W Z_j^T + \beta^T X_{ij} \big) &#10;\end{equation*}" src="https://rawgit.com/dadashkarimi/dadashkarimi.github.io/master/svgs/6170744f6ba3a56c8f93a068152b977b.svg?sanitize=true" align="middle" width="291.73155pt" height="20.913915pt"/></p>
+
+it takes you to compute <img alt="$X_{i,j} = \exp (-d(i,j))$" style="position:relative; top:7px;" src="https://rawgit.com/dadashkarimi/dadashkarimi.github.io/master/svgs/21307b65cad84cae9442087ddc854d77.svg?sanitize=true"/> which is a scalar similarity metric. 
+Therefor from a practical point of view in each step of a sampling process the two most similar nodes should tend to get a link between them. 
+
+This is certainly true based around a generative process but how do we generate these samples.
+They proposed an approximate inference via MCMC:
+<p align="center"><img alt="\begin{equations*}&#10;P(z_{ik}=1| Z_{-ik},W,Y) \propto P(Y|z_{ik}=1,Z_{-ik},W)&#10;\end{equations*}" src="https://rawgit.com/dadashkarimi/dadashkarimi.github.io/master/svgs/2c2ca4e05835e160ee94bab2c00b3772.svg?sanitize=true" align="middle" width="337.4976pt" height="16.376943pt"/></p> 
 
 I hope you pick this article up in less than 7 minutes!
 
