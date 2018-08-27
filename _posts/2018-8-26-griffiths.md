@@ -15,8 +15,20 @@ You have to be able to assign a single class <img alt="$c=$" style="position:rel
 Assume <img alt="$y_{ij}=1$" style="position:relative; top:7px;" src="https://rawgit.com/dadashkarimi/dadashkarimi.github.io/master/svgs/193959917d5e875406dd5eab26c8139e.svg?sanitize=true"/> if there is a link between entity <img alt="$i$" style="position:relative; top:2px;" src="https://rawgit.com/dadashkarimi/dadashkarimi.github.io/master/svgs/77a3b857d53fb44e33b53e4c8b68351a.svg?sanitize=true"/> and <img alt="$j$" style="position:relative; top:2px;" src="https://rawgit.com/dadashkarimi/dadashkarimi.github.io/master/svgs/36b5afebdba34564d884d347484ac0c7.svg?sanitize=true"/> and <img alt="$y_{i,j}=0$" style="position:relative; top:7px;" src="https://rawgit.com/dadashkarimi/dadashkarimi.github.io/master/svgs/67e3ad425f262d5d43ef11d4da43e404.svg?sanitize=true"/> if not. 
 Lets define <img alt="$Z=[z_{i,j}]\in {0,1}^{N\times K}$" style="position:relative; top:7px;" src="https://rawgit.com/dadashkarimi/dadashkarimi.github.io/master/svgs/4ee8061a5761da701621649613786b8a.svg?sanitize=true"/> the feature value matrix for all examples and <img alt="$W=[w_{i,j}] \in R^{K\times K}$" style="position:relative; top:7px;" src="https://rawgit.com/dadashkarimi/dadashkarimi.github.io/master/svgs/daa1032b51643b282c7bcad307157bbf.svg?sanitize=true"/> the weight matrix.
 
-<p align="center"><img alt="\begin{equation*}&#10;Pr(Y|Z,W) = \Pi_{i,j} \Bigg[ Pr(y_{ij}| Z_i, Z_j,W) = \sigma \big ( Z_i W Z_j^T\big) = \sigma \big( \sum z_{ik}z_{jk'}w_{kk'}\big) \Bigg ]&#10;\end{equation*}" src="https://rawgit.com/dadashkarimi/dadashkarimi.github.io/master/svgs/4b5b56a3b61b9099e8ac4c29eeb2671d.svg?sanitize=true" align="middle" width="539.21505pt" height="49.13139pt"/></p>
+<p align="center"><img alt="\begin{equation*}&#10;Pr(Y|Z,W) = \Pi_{i,j} \Bigg[ Pr(y_{ij}| Z_i, Z_j,W) = \sigma \big ( Z_i W Z_j^T\big) = \sigma \big( \sum_{k,k'} z_{ik}z_{jk'}w_{kk'}\big) \Bigg ]&#10;\end{equation*}" src="https://rawgit.com/dadashkarimi/dadashkarimi.github.io/master/svgs/03f12488dd55351438187941a5cd980d.svg?sanitize=true" align="middle" width="539.21505pt" height="50.765715pt"/></p>
 
+If I unpack the definition of this function, the <img alt="$y_{i,j}$" style="position:relative; top:2px;" src="https://rawgit.com/dadashkarimi/dadashkarimi.github.io/master/svgs/782a78d8c11a2145d873d3bc48870864.svg?sanitize=true"/> is purely defined by features and the weights where <img alt="$\sigma = \frac{1}{1+\exp (-x)}$" style="position:relative; top:7px;" src="https://rawgit.com/dadashkarimi/dadashkarimi.github.io/master/svgs/9eaa22a843a8020f1a347b764412b390.svg?sanitize=true"/>.
+We don't need to invoke very complicated ideas but we are about to assume the following priors:
+<p align="center"><img alt="\begin{equation*}&#10;Z \sim IBP(\alpha) \\&#10;w_{kk'} \sim N(0,\delta^2_w) \\&#10;y_{ij} \sim \delta(Z_iWZ_j^T)&#10;\end{equation*}" src="https://rawgit.com/dadashkarimi/dadashkarimi.github.io/master/svgs/a284cd72d68a4a5d0beb5bc1ea3a8ee5.svg?sanitize=true" align="middle" width="325.74135pt" height="20.913915pt"/></p>
+
+
+
+It gives a huge amount of insight into
+this is certainly true in ..
+we are gonna take this simple idea and generalize it ..
+we realy don't want our prior somehowe magically depends on 
+it has some set of very nice properties
+we are going to take the limit of this as go goes to infin
 naturally it captures this fact that
 high weight between them
 should tend to have same labels
