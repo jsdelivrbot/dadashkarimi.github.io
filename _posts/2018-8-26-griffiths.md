@@ -41,12 +41,13 @@ Therefor from a practical point of view in each step of a sampling process the t
 This is certainly true based around a generative process but how do we generate these samples.
 They proposed an approximate inference via MCMC:
 <p align="center"><img alt="\begin{equations*}&#10;P(z_{ik}=1| Z_{-ik},W,Y) \propto P(Y|z_{ik}=1,Z_{-ik},W)&#10;\end{equations*}" src="https://rawgit.com/dadashkarimi/dadashkarimi.github.io/master/svgs/2c2ca4e05835e160ee94bab2c00b3772.svg?sanitize=true" align="middle" width="337.4976pt" height="16.376943pt"/></p> 
-Just to give you an intuition, the MCMC gibbsi sampling is a method starts with random initialization; 
-to be more precise <img alt="$Z_{-ik}$" style="position:relative; top:7px;" src="https://rawgit.com/dadashkarimi/dadashkarimi.github.io/master/svgs/5e106c28ccbc3936410489fe9da8d97a.svg?sanitize=true"/> renders the future independant of past.
-We can think exactly analogously to topic modeling where each word is supposed to be end up with a topic. 
+Just to give you an intuition, the MCMC Gibbs sampling is a method starts with random initialization; 
+to be more precise <img alt="$Z_{-ik}$" style="position:relative; top:7px;" src="https://rawgit.com/dadashkarimi/dadashkarimi.github.io/master/svgs/5e106c28ccbc3936410489fe9da8d97a.svg?sanitize=true"/> is supposed to be able to render the future independant of past.
+To be more precise, removing <img alt="$z_{ik}$" style="position:relative; top:2px;" src="https://rawgit.com/dadashkarimi/dadashkarimi.github.io/master/svgs/e444b929a98b82edf6fd7171777f06bf.svg?sanitize=true"/> and re-sampling it by <img alt="$Z_{-ik}$" style="position:relative; top:7px;" src="https://rawgit.com/dadashkarimi/dadashkarimi.github.io/master/svgs/5e106c28ccbc3936410489fe9da8d97a.svg?sanitize=true"/> is effectively operating towards convergance to the real distributin.
+We can think exactly analogously to topic modeling where each word is supposed to get a topic label through a large number of documents. 
 Take a look at David Blei's dirichlete model for more details.
 
-I hope you pick this article up in less than 7 minutes!
+Hopefully you  picked up this article in less than 7 minutes!
 
 ```
 @inproceedings{miller2009nonparametric,
