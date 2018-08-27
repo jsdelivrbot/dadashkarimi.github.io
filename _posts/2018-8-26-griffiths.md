@@ -40,6 +40,10 @@ Therefor from a practical point of view in each step of a sampling process the t
 This is certainly true based around a generative process but how do we generate these samples.
 They proposed an approximate inference via MCMC:
 <p align="center"><img alt="\begin{equations*}&#10;P(z_{ik}=1| Z_{-ik},W,Y) \propto P(Y|z_{ik}=1,Z_{-ik},W)&#10;\end{equations*}" src="https://rawgit.com/dadashkarimi/dadashkarimi.github.io/master/svgs/2c2ca4e05835e160ee94bab2c00b3772.svg?sanitize=true" align="middle" width="337.4976pt" height="16.376943pt"/></p> 
+Just to give you an intuition, the MCMC gibbsi sampling is a method starts with random initialization; 
+to be more precise <img alt="$Z_{-ik}$" style="position:relative; top:7px;" src="https://rawgit.com/dadashkarimi/dadashkarimi.github.io/master/svgs/5e106c28ccbc3936410489fe9da8d97a.svg?sanitize=true"/> renders the future independant of past.
+We can think exactly analogously to topic modeling where each word is supposed to be end up with a topic. 
+Take a look at David Blei's dirichlete model for more details.
 
 I hope you pick this article up in less than 7 minutes!
 
