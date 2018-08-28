@@ -51,7 +51,7 @@ Take a look at David Blei's dirichlete model for more details.
 Hopefully you  picked up this article in less than 7 minutes!
 
 ```
-@inproceedings{miller2009nonparametric,
+@inproceedings{miller:2009,
   title={Nonparametric latent feature models for link prediction},
   author={Miller, Kurt and Jordan, Michael I and Griffiths, Thomas L},
   booktitle={Advances in neural information processing systems},
