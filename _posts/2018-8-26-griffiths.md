@@ -8,6 +8,7 @@ There is quite a lot of material in non-parametric bayesian;
 the reason that I'm going to spend a little bit of time on writing this is because of it's magic approach towards inferring the number of classes at the same time as associating the entities to each class.
 I'll wrap up on details later but first I'm going to give enough background for you to follow what is going on in the paper.
 From a classical point of view a link prediction task is meant to be defined by a number of edges and a set of nodes where ultimately we aim to predict new possible edgs between nodes.
+
 In ML community it's common to use latent class models to learn latent classes in data as well as associating each node to a number of them.
 This apparently simple problem turns out to be very complicated if the number of classes is unknown before observing data. 
 Let's say <img alt="$s_1=$" style="position:relative; top:7px;" src="https://rawgit.com/dadashkarimi/dadashkarimi.github.io/master/svgs/e63d5448ef61e2fd17edd20e83eeed26.svg?sanitize=true"/>'male high school athletes' and <img alt="$s_2=$" style="position:relative; top:7px;" src="https://rawgit.com/dadashkarimi/dadashkarimi.github.io/master/svgs/caa80954b35018e0be0ea8d2119017fd.svg?sanitize=true"/>'male high school musician'. 
