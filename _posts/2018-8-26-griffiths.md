@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Nonparametric Latent Feature Models for Link Prediction
+title: Nonparametric Latent Feature Models for Link Prediction 8
 ---
 
 This paper is from the ML group in Berkeley.
