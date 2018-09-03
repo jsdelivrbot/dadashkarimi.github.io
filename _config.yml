@@ -84,6 +84,6 @@ exclude:
   - LICENSE
   - README.md
   - CNAME
-
+future: true
 scholar:
   style: mla
