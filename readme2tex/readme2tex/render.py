@@ -126,7 +126,7 @@ def render(
         htmlize=False,
         use_valign=False,
         rerender=False,
-        pngtrick=True,
+        pngtrick=False,
         bustcache=False):
     # look for $.$ or $$.$$
     if htmlize:
@@ -211,7 +211,7 @@ def render(
                     xml.set('viewBox', ' '.join(map(str, newViewBox)))
                     pass
         else:
-            baseline_offset = -1
+            baseline_offset = 0
 
         xml.set('readme2tex:offset', str(baseline_offset))
         xml.set('xmlns:readme2tex', 'http://github.com/leegao/readme2tex/')
@@ -332,22 +332,15 @@ def render(
         if bustcache:
             tail.append('%x' % random.randint(0, 1e12))
         if needs_inversion:
-            tail.append('sanitize=true')
-	#img = '![%s](%s%s)' % (quoteattr(equation),url,'?%s' % ('&'.join(tail)) if tail else '')
-	#if '=' in (quoteattr(equation)) or 'sum' in (quoteattr(equation)) or '(' in (quoteattr(equation))  or (quoteattr(equation)) != (quoteattr(equation)).lower():
-	if any((c in '=(\\') for c  in (quoteattr(equation))) or (quoteattr(equation)) != (quoteattr(equation)).lower():
-		img = '<img alt=%s style="position:%s top:%s" src="%s%s"/>' % (quoteattr(equation),'relative;','7px;',url,'?%s' % ('&'.join(tail)) if tail else '')
-	else:
-		img = '<img alt=%s style="position:%s top:%s" src="%s%s"/>' % (quoteattr(equation),'relative;','2px;',url,'?%s' % ('&'.join(tail)) if tail else '')
-
-        img_ = '<img alt=%s src="%s%s" %s width="%spt" height="%spt"/>' % (
+            tail.append('invert_in_darkmode')
+        img = '<img alt=%s src="%s%s" %s width="%spt" height="%spt"/>' % (
             quoteattr(equation),
             url,
-           '?%s' % ('&'.join(tail)) if tail else '',
+            '?%s' % ('&'.join(tail)) if tail else '',
             ('valign=%spx'%(-off * scale) if use_valign else 'align="middle"'),
             width,
             height)
-        if block: img = '<p align="center">%s</p>' % img_
+        if block: img = '<p align="center">%s</p>' % img
         new = new[:start] + img + new[end:]
     with open(output, 'w') as outfile:
         outfile.write(new)
