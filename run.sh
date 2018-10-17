@@ -5,7 +5,8 @@ input=_posts/$base
 cp $1 ./_posts
 #fi
 
-git branch svgs # if this isn't already there
+#git branch svgs # if this isn't already there
+git branch master # if this isn't already there
 #python -m readme2tex --output READMETMP.md $input --username dadashkarimi --branch master --project dadashkarimi.github.io --usepackage amsmath --usepackage amssymb --usepackage caption
 python -m readme2tex --output READMETMP.md $input --username dadashkarimi --branch master --project dadashkarimi.github.io --usepackage amsmath
 mv READMETMP.md $input
