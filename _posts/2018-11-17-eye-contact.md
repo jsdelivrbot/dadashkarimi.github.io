@@ -10,7 +10,7 @@ Hatred starts from each person and ends up with brutal dictators and leaders.
 When I was at home, my friends used to call me "The King of Hearts" or the person with "Charm Smiles". 
 Sometimes my aunts and uncles say that "You lived in this World once before."
 Or when I asked my friend if it's disgusting to say if this bartender looks like Lady Gaga and he said nothing is disgusting with your smiles.
-I'm writing this blog to let people know what was the reason behind my charisma and why people like me.
+I'm writing this blog to let people know what was the reason behind my charisma, why people like me, and all happy around me.
 
 It was long times ago that I started thinking  why today was a "good" day or it was a "terrible" day.
 In most cases I realised that my good days started with a charm eye contact or a positive comment on my appearance. 
